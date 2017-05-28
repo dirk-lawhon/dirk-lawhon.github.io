@@ -1,21 +1,18 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-title: Dirk Lawhon
+name: Dirk Lawhon
+title: Dirk Lawhon | Software Engineer
+description: The future ain't what it used to be.
 email: dirklawhon@protonmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://dirklawhon.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+baseurl: ""
+url: http://dirklawhon.com
+cover: http://dirklawhon.com/img/cover.jpg
+social:
+  title: email
+  url: mailto:dirklawhon@protonmail.com
+  title: github
+  url: https://github.com/dirklawhon
+  title: linkedin
+  url: https://www.linkedin.com/in/dirklawhon
 
 # Build settings
 markdown: kramdown
