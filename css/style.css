@@ -13,6 +13,9 @@ html,body {
     width: 100%;
     margin: auto;
     background: url('../img/bg.jpg');
+    display: table;
+    top: 0;
+    background-size: cover;
 }
 
 .intro .inner {
@@ -21,3 +24,20 @@ html,body {
     width: 100%;
     max-width: none;
 }
+
+.content {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content h1 {
+    font-family: 'Raleway', sans-serif;
+    color: #F9F3F4;
+}
+
+.content h2 {
+    font-family: 'Raleway', sans-serif;
+    color: #F9F3F4;
+}
+
