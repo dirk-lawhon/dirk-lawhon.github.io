@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Libre Baskerville');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 html,body {
     margin: 0;
@@ -12,7 +12,7 @@ html,body {
     height: 100%;
     width: 100%;
     margin: auto;
-    background: url('../img/bg.jpg');
+    background: url('../img/bg.png');
     display: table;
     top: 0;
     background-size: cover;
@@ -32,16 +32,37 @@ html,body {
 }
 
 .content h1 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Libre Baskerville', sans-serif;
     color: #F9F3F4;
     text-shadow: 0px 0px 300px #000;
-    font-size: 400%;
+    font-size: 420%;
+    letter-spacing: 3px;
+    opacity: 0.5;
 }
 
 .content h2 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #F9F3F4;
+    font-size: 200%;
+    letter-spacing: px;
+    opacity: 0.25;
+}
+
+.btn {
+    border-radius: 9px;
+    font-family: 'Teko', sans-serif;
+    color: #036A81;
     font-size: 150%;
+    padding: 10px 20px;
+    border: solid #036A81;
+    text-transform: uppercase;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.btn:hover {
+    color: #fff;
+    border: solid #fff 3px;
 }
 
 @media screen and (max-width: 768) {
@@ -50,5 +71,9 @@ html,body {
     }
     .content h2 {
         font-size: 130%;
+    }
+    .btn {
+        font-size: 110%;
+        padding: 7px 15px;
     }
 }
