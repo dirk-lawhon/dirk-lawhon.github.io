@@ -6,57 +6,84 @@ html,body {
     padding: 0;
     height: 100%;
     width: 100%;
+    background-color: #f4f4f4;
 }
 
-.intro {
-    height: 100%;
-    width: 100%;
+/* Global */
+.container {
+    width: 80%;
     margin: auto;
-    background: url('/img/bg.png');
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero */
+#hero {
+    min-height: 1000px;
+    background: url('../img/bg.png') no-repeat 0 -100px;
+    background-size: cover;
+    color: #F9F3F4;
+    text-align: center;
+    /*width: 100%;
+    margin: auto;
     display: table;
     top: 0;
     background-size: cover;
-}
-
-.intro .container {
     display: table-cell;
     vertical-align: middle;
-    width: 100%;
-    max-width: none;
+    max-width: none;*/
 }
 
-.container {
-    max-width: 500px;
-    margin: 0 auto;
-    text-align: center;
+#hero a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.main h1 {
+#hero li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+#hero nav {
+    margin-top: 20px;
+    float: right;
+}
+
+#hero .highlight, #hero .current a {
+    color: #FFD700;
+    font-weight: bold;
+}
+
+#hero a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+#hero h1 {
+    margin-top: 350px;
     font-family: 'Libre Baskerville', sans-serif;
-    color: #F9F3F4;
     text-shadow: 0px 0px 300px #000;
-    font-size: 420%;
+    font-size: 70px;
     letter-spacing: 3px;
     opacity: 0.5;
-    margin: 0;
-    padding: 10px;
-    position: relative;
-    bottom: 40px;
 }
 
-.main h2 {
+#hero h2 {
     font-family: 'Montserrat', sans-serif;
-    color: #F9F3F4;
     font-size: 200%;
-    letter-spacing: px;
     opacity: 0.25;
-    margin: 0;
-    padding: 10px;
-    position: relative;
-    bottom: 40px;
+    margin-top: -40px;
 }
 
-.btn {
+.btn_hero {
     border-radius: 7px;
     font-family: 'Montserrat', sans-serif;
     color: #036A81;
@@ -64,57 +91,65 @@ html,body {
     padding: 10px 10px;
     border: solid #036A81;
     text-decoration: none;
-    position: relative;
-    top: 30px;
+    margin-top: 300px;
 }
 
-.btn:hover {
+.btn_hero:hover {
     color: #fff;
     border: solid #fff 3px;
 }
 
-.about {
-    background-color: #EEEEEE;
+#about {
     padding: 10px;
+    background-color: #35424a;
 }
 
-.about h1 {
+#about h1 {
+    font-family: "Libre Baskerville", sans-serif;
+    float: left;
     font-weight: 600;
     font-size: 200%;
 }
 
-.about h2 {
+#about h2 {
+    font-family: "Montserrat", sans-serif;
     font-weight: 300;
     font-size: 150%;
     color:darkgrey;
+    position: relative;
+    top: 100px;
 }
 
-.about img {
-    height: 100px;
-}
-
-.roles {
-    background-color: #EEEEEE;
-}
-
-.roles .col {
+#about img {
     float: left;
-    width: 33%;
-    font-family: 'Libre Baskerville', sans-serif;
+    height: 400px;
+    margin-left: -250px;
+}
+
+#services {
+    background-color: #EEEEEE;
+    padding: 10px;
+}
+
+#services .col {
+    float: left;
     text-align: center;
+    width: 30%;
+    padding: 10px;
 }
 
-.roles img {
-    height: 32px;
+#services .col img {
+    width: 90px;
 }
 
-.roles h2 {
+#services h3 {
+    font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 23px;
     text-transform: uppercase;
 }
 
-.roles p {
+#services p {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;

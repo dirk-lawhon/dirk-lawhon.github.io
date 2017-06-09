@@ -1,79 +1,91 @@
 <DOCTYPE! html>
-    <head>
-        <meta charset="utf-8"/>
-        <title>Dirk Lawhon | Software Engineer</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="web design, web development, software engineer, web designer, web developer, front end, personal website, professional website">
+    <meta name="author" content="Dirk Lawhon">
+    <title>Dirk Lawhon | Software Engineer</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-            ga('create', 'UA-100701412-1', 'auto');
-            ga('send', 'pageview');
+        ga('create', 'UA-100701412-1', 'auto');
+        ga('send', 'pageview');
 
-        </script>
-    </head>
-    <body>
-        <section class="intro">
-            <div class="container">
-                <div class="main">
-                    <h1>Dirk Lawhon</h1>
-                    <h2>SOFTWARE ENGINEER</h2>
-                    <a class="btn" href="#">Learn More</a>
-                </div>
+    </script>
+</head>
+<body>
+    <section id="hero">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
+            <h1>Dirk Lawhon</h1>
+            <h2>SOFTWARE ENGINEER</h2>
+            <button type="button" class="btn_hero">Learn More</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <img src="img/me.png">
+            <h1>Hi, I'm Dirk.</h1>
+            <h2>I'm a front end web developer with a passion to build projects intersecting creative design with elegant code.</h2>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="col">
+                <img src="https://s3.amazonaws.com/codecademy-content/projects/broadway/develop.svg">
+                <h3>Development</h3>
+                <p>Make your projects look great and interact beautifully.</p>
+                <a class="btn-default" href="#">Learn more</a>
             </div>
-        </section>
-
-        <div class="about">
-            <div class="container">
-                <img src="img/me.png">
-                <h1>Hi, I'm Dirk.</h1>
-                <h2>I'm a front end web developer with a passion to build projects intersecting creative design with elegant code.</h2>
+            <div class="col">
+                <img src="https://s3.amazonaws.com/codecademy-content/projects/broadway/develop.svg">
+                <h3>Responsive Design</h3>
+                <p>Use modern tools to turn your design into a web site</p>
+                <a class="btn-default" href="#">Learn more</a>
+            </div>
+            <div class="col">
+                <img src="https://s3.amazonaws.com/codecademy-content/projects/broadway/develop.svg">
+                <h3>UI/UX</h3>
+                <p>Use modern tools to turn your design into a web site</p>
+                <a class="btn-default" href="#">Learn more</a>
             </div>
         </div>
+    </section>
 
-        <div class="roles">
-            <div class="container">
-                <div class="col">
+    <footer>
+        <p>&copy; Dirk Lawhon 2017</p>
+    </footer>
+    <!--<div class="footer">
+        <div class="container">
+            <div class="col">
+                <div class="social">
                     <img src="https://s3.amazonaws.com/codecademy-content/projects/broadway/develop.svg">
-                    <h2>Development</h2>
-                    <p>Make your projects look great and interact beautifully.</p>
-                    <a class="btn-default" href="#">Learn more</a>
                 </div>
-
-                <div class="col">
+                <div class="social">
                     <img src="https://s3.amazonaws.com/codecademy-content/projects/broadway/develop.svg">
-                    <h2>Responsive Design</h2>
-                    <p>Use modern tools to turn your design into a web site</p>
-                    <a class="btn-default" href="#">Learn more</a>
                 </div>
-
-                <div class="col">
-                    <img src="https://s3.amazonaws.com/codecademy-content/projects/broadway/deploy.svg">
-                    <h2>UI/UX</h2>
-                    <p>Use modern tools to turn your design into a web site</p>
-                    <a class="btn-default" href="#">Learn more</a>
+                <div class="social">
+                    <img src="https://s3.amazonaws.com/codecademy-content/projects/broadway/develop.svg">
                 </div>
             </div>
-        </div>
-
-        <div class="footer">
-            <div class="container">
-                <div class="col">
-                    <div class="social">
-                        <img src="https://s3.amazonaws.com/codecademy-content/projects/broadway/develop.svg">
-                    </div>
-                    <div class="social">
-                        <img src="https://s3.amazonaws.com/codecademy-content/projects/broadway/develop.svg">
-                    </div>
-                    <div class="social">
-                        <img src="https://s3.amazonaws.com/codecademy-content/projects/broadway/develop.svg">
-                    </div>
-                </div>
-                <div class="col">
-                    <p>&copy; Dirk Lawhon 2017</p>
-                </div>
+            <div class="col">
+                <p>&copy; Dirk Lawhon 2017</p>
             </div>
         </div>
-    </body>
+    </div>-->
+</body>
+
+</html>
