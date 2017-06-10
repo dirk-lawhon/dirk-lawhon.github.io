@@ -24,18 +24,10 @@ ul {
 /* Hero */
 #hero {
     min-height: 1000px;
-    background: url('../img/bg.png') no-repeat 0 -100px;
+    background: url('../img/bulb1.jpeg') no-repeat;
     background-size: cover;
     color: #F9F3F4;
     text-align: center;
-    /*width: 100%;
-    margin: auto;
-    display: table;
-    top: 0;
-    background-size: cover;
-    display: table-cell;
-    vertical-align: middle;
-    max-width: none;*/
 }
 
 #hero a {
@@ -116,19 +108,16 @@ ul {
     font-weight: 300;
     font-size: 150%;
     color:darkgrey;
-    position: relative;
-    top: 100px;
 }
 
 #about img {
-    float: left;
     height: 400px;
     margin-left: -250px;
 }
 
 #services {
     background-color: #EEEEEE;
-    padding: 10px;
+    padding: 20px;
 }
 
 #services .col {
@@ -136,10 +125,11 @@ ul {
     text-align: center;
     width: 30%;
     padding: 10px;
+    min-width: 200px;
 }
 
 #services .col img {
-    width: 90px;
+    width: 200px;
 }
 
 #services h3 {
@@ -157,50 +147,56 @@ ul {
     margin-bottom: 40px;
 }
 
-.footer {
-    height: 100%;
-    width: 100%;
-    margin: auto;
-    display: table;
-    top: 0;
-    background: url('/img/footer.png');
-    background-size: cover;
+#contact {
+    background: url('/img/contact.png');
+    color: #ffffff;
+    min-height: 1000px;
+    text-align: center;
 }
 
-.footer .col {
-    float: left;
-    width: 100;
+#contact h3 {
+    margin-top: 100px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+
+
+footer {
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+    background-color: black;
+}
+
+footer img {
+    padding: 20px;
+    width: 30px;
+}
+
+footer p {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 12px;
     text-align: center;
-    padding: 30px 0;
 }
 
-.footer p {
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    font-size: 15px;
-    text-align: center;
-
-}
-
-.social {
-    height: 32px;
-    width: 33%;
-}
-
-
-
-@media screen and (max-width: 768) {
-    .content h1 {
-        font-size: 250%;
+/* Media Queries */
+@media(max-width: 768px){
+    header nav,
+    header nav li,
+    #services .col{
+        float: none;
+        text-align:center;
+        width: 100%;
     }
-    .content h2 {
-        font-size: 130%;
+
+    header {
+        padding-bottom: 20px;
     }
-    .btn {
-        font-size: 110%;
-        padding: 7px 15px;
+
+    #hero h1 {
+        margin-top:350px;
     }
 }
