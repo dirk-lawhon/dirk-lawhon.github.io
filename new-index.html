@@ -17,97 +17,103 @@
         ga('send', 'pageview');
 
     </script>
-    <script>
-        function blink()
-        {
-            document.getElementById('#hero h1').innerHTML="";
-            setTimeout("appear()", 500);
-        }
-        function appear()
-        {
-            document.getElementById('#hero h1').textContent;
-            setTimeout("blink()", 500);
-        }
-    </script>
 </head>
 <body>
-    <section id="hero">
+    <section id="banner">
         <div class="container">
             <nav>
                 <ul>
                     <li class="current"><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
+                    <li><a href="new-index.html#about">About</a></li>
+                    <li><a href="new-index.html#services">Services</a></li>
+                    <li><a href="new-index.html#skills">Skills</a></li>
+                    <li><a href="new-index.html#contact">Contact</a></li>
                 </ul>
             </nav>
             <h1>Dirk Lawhon</h1>
             <h2>SOFTWARE ENGINEER</h2>
-            <button type="button" class="btn_hero">Learn More</button>
+            <button type="button" class="btn_banner"><a href="new-index.html#services"></a>Learn More</button>
         </div>
     </section>
 
-    <section id="about">
-        <div class="container">
-            <img src="img/me.png">
-            <h1>Hi, I'm Dirk.</h1>
-            <h2>I'm a front end web developer with a passion to build projects intersecting creative design with elegant code.</h2>
-        </div>
-    </section>
+    <div id="content">
 
-    <section id="services">
-        <div class="container">
-            <div class="col">
-                <img src="img/development.png">
-                <h3>Development</h3>
-                <p>Make your projects look great and interact beautifully.</p>
-                <a class="btn-default" href="#">Learn more</a>
+        <!--<section id="about">
+            <a name="about"></a>
+            <div class="container">
+                <img src="img/me.png">
+                <h1>Hi, I'm Dirk.</h1>
+                <h2>I'm a front end web developer with a passion to build projects intersecting creative design with elegant code.</h2>
             </div>
-            <div class="col">
-                <img src="img/responsive.png">
-                <h3>Responsive Design</h3>
-                <p>Use modern tools to turn your design into a web site</p>
-                <a class="btn-default" href="#">Learn more</a>
-            </div>
-            <div class="col">
-                <img src="img/design.png">
-                <h3>UI/UX</h3>
-                <p>Use modern tools to turn your design into a web site</p>
-                <a class="btn-default" href="#">Learn more</a>
-            </div>
-        </div>
-    </section>
+        </section>-->
 
-
-    <section id="contact">
-        <div class="container">
-            <h3>Contact</h3>
-        </div>
-    </section>
-
-    <footer>
-        <img src="email.png">
-        <img src="img/linkedin.png">
-        <img src="img/github.png">
-        <p>Dirk Lawhon &copy; 2017</p>
-    </footer>
-    <!--<div class="footer">
-        <div class="container">
-            <div class="col">
-                <div class="social">
-                    <img src="https://s3.amazonaws.com/codecademy-content/projects/broadway/develop.svg">
+        <section id="services">
+            <a name="services"></a>
+            <div class="container">
+                <div class="col">
+                    <img src="img/development.png">
+                    <h3>Development</h3>
+                    <p>Make your projects look great and interact beautifully.</p>
+                    <a class="btn-default" href="#">Learn more</a>
                 </div>
-                <div class="social">
-                    <img src="https://s3.amazonaws.com/codecademy-content/projects/broadway/develop.svg">
+                <div class="col">
+                    <img src="img/responsive.png">
+                    <h3>Responsive Design</h3>
+                    <p>Use modern tools to turn your design into a web site</p>
+                    <a class="btn-default" href="#">Learn more</a>
                 </div>
-                <div class="social">
-                    <img src="https://s3.amazonaws.com/codecademy-content/projects/broadway/develop.svg">
+                <div class="col">
+                    <img src="img/design.png">
+                    <h3>UI/UX</h3>
+                    <p>Use modern tools to turn your design into a web site</p>
+                    <a class="btn-default" href="#">Learn more</a>
                 </div>
             </div>
+        </section>
+
+        <section id="skills">
+            <a name="skills"></a>
             <div class="col">
-                <p>&copy; Dirk Lawhon 2017</p>
+                <img src="img/html5.png">
+                <img src="img/css3.png">
+                <img src="img/javascript.png">
+                <img src="img/jquery.png">
             </div>
-        </div>
-    </div>-->
+        </section>
+
+        <section id="contact">
+            <a name="contact"></a>
+            <div class="container">
+                <h3>Contact</h3>
+                <form action="/action_page.php">
+
+                    <input type="text" id="name" name="name" placeholder="Name">
+
+                    <input type="text" id="email" name="email" placeholder="Email">
+
+                    <label for="reason">Reason</label>
+                    <select id="reason" name="reason">
+                        <option value="proposal">Project Proposal</option>
+                        <option value="hello">Say Hello</option>
+                        <option value="feedback">Questions/Feedback</option>
+                    </select>
+
+                    <label for="comments">Comments</label>
+                    <textarea id="comments" name="comments" style="height:150px"></textarea>
+
+                    <input type="submit" value="Send">
+
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <img src="img/email.png">
+            <img src="img/linked-in.png">
+            <img src="img/github.png">
+            <p>Dirk Lawhon &copy; 2017</p>
+        </footer>
+    </div>
 </body>
 
 </html>

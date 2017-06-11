@@ -10,6 +10,7 @@ html,body {
 }
 
 /* Global */
+
 .container {
     width: 80%;
     margin: auto;
@@ -21,16 +22,27 @@ ul {
     padding: 0;
 }
 
+/* Content */
+
+#content {
+    position: relative;
+    top: 1000px;
+    padding-top: 50px;
+}
+
 /* Hero */
-#hero {
+
+#banner {
     min-height: 1000px;
-    background: url('../img/bulb1.jpeg') no-repeat;
+    background: url('../img/bulb1.jpeg') no-repeat 0;
     background-size: cover;
     color: #F9F3F4;
     text-align: center;
+    position: fixed;
+    width: 100%;
 }
 
-#hero a {
+#banner a {
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
@@ -38,28 +50,27 @@ ul {
     font-family: 'Montserrat', sans-serif;
 }
 
-#hero li {
-    float: left;
+#banner li {
     display: inline;
     padding: 0 20px 0 20px;
 }
 
-#hero nav {
+#banner nav {
     margin-top: 20px;
     float: right;
 }
 
-#hero .highlight, #hero .current a {
+#banner .highlight, #banner .current a {
     color: #FFD700;
     font-weight: bold;
 }
 
-#hero a:hover {
+#banner a:hover {
     color: #cccccc;
     font-weight: bold;
 }
 
-#hero h1 {
+#banner h1 {
     margin-top: 350px;
     font-family: 'Libre Baskerville', sans-serif;
     text-shadow: 0px 0px 300px #000;
@@ -68,28 +79,31 @@ ul {
     opacity: 0.5;
 }
 
-#hero h2 {
+#banner h2 {
+    margin-top: -40px;
     font-family: 'Montserrat', sans-serif;
     font-size: 200%;
     opacity: 0.25;
-    margin-top: -40px;
 }
 
-.btn_hero {
+.btn_banner {
     border-radius: 7px;
     font-family: 'Montserrat', sans-serif;
-    color: #036A81;
+    color: #F9F3F4;
     font-size: 100%;
     padding: 10px 10px;
-    border: solid #036A81;
+    border: solid #F9F3F4 2px;
     text-decoration: none;
-    margin-top: 300px;
+    margin-top: 175px;
+    background: none;
 }
 
-.btn_hero:hover {
-    color: #fff;
-    border: solid #fff 3px;
+.btn_banner:hover {
+    color: #CCC000;
+    border: solid #CCC000 3px;
 }
+
+/* About */
 
 #about {
     padding: 10px;
@@ -114,6 +128,8 @@ ul {
     height: 400px;
     margin-left: -250px;
 }
+
+/* Services */
 
 #services {
     background-color: #EEEEEE;
@@ -147,6 +163,8 @@ ul {
     margin-bottom: 40px;
 }
 
+/* Contact */
+
 #contact {
     background: url('/img/contact.png');
     color: #ffffff;
@@ -162,6 +180,49 @@ ul {
     opacity: 0.5;
 }
 
+form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    width: 50%;
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+}
+
+label {
+    color: darkslategray;
+    float: left;
+    padding: 10px 5px 5px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+#email {
+    margin-top: 10px;
+}
+
+input[type=submit] {
+    background-color: darkslategray;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+input[type=submit]:hover {
+    background-color: #248382;
+}
+
+/* Footer */
 
 footer {
     padding: 20px;
@@ -172,7 +233,7 @@ footer {
 
 footer img {
     padding: 20px;
-    width: 30px;
+    width: 40px;
 }
 
 footer p {
@@ -183,20 +244,26 @@ footer p {
 }
 
 /* Media Queries */
+
 @media(max-width: 768px){
-    header nav,
-    header nav li,
+    #banner nav,
+    #banner nav li,
+    #banner h1,
+    #banner h2,
     #services .col{
         float: none;
         text-align:center;
         width: 100%;
     }
 
-    header {
-        padding-bottom: 20px;
+    #banner h1 {
+        margin-top: 275px;
+        font-size: 45px;
     }
 
-    #hero h1 {
-        margin-top:350px;
+    #banner h2 {
+        padding-top: 10px;
+        font-size: 25px;
     }
+
 }
