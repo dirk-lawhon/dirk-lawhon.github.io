@@ -6,7 +6,6 @@ html,body {
     padding: 0;
     height: 100%;
     width: 100%;
-    background-color: #f4f4f4;
 }
 
 /* Global */
@@ -22,23 +21,45 @@ ul {
     padding: 0;
 }
 
-/* Content */
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+}
 
-#content {
-    position: relative;
-    top: 1000px;
-    padding-top: 50px;
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header nav {
+    margin: 20px 0 0 1300px;
+    float: right;
+    background-color: black;
+    z-index: 10;
+    position: fixed;
+}
+
+header .highlight, header .current a {
+    color: #FFD700;
+    font-weight: bold;
+}
+
+header a:hover {
+    font-weight: bold;
 }
 
 /* Hero */
 
 #banner {
     min-height: 1000px;
-    background: url('../img/bulb1.jpeg') no-repeat 0;
+    background: transparent no-repeat 0;
     background-size: cover;
+    background-position: center;
     color: #F9F3F4;
     text-align: center;
-    position: fixed;
     width: 100%;
 }
 
@@ -50,26 +71,6 @@ ul {
     font-family: 'Montserrat', sans-serif;
 }
 
-#banner li {
-    display: inline;
-    padding: 0 20px 0 20px;
-}
-
-#banner nav {
-    margin-top: 20px;
-    float: right;
-}
-
-#banner .highlight, #banner .current a {
-    color: #FFD700;
-    font-weight: bold;
-}
-
-#banner a:hover {
-    color: #cccccc;
-    font-weight: bold;
-}
-
 #banner h1 {
     margin-top: 350px;
     font-family: 'Libre Baskerville', sans-serif;
@@ -77,6 +78,7 @@ ul {
     font-size: 70px;
     letter-spacing: 3px;
     opacity: 0.5;
+
 }
 
 #banner h2 {
@@ -84,6 +86,19 @@ ul {
     font-family: 'Montserrat', sans-serif;
     font-size: 200%;
     opacity: 0.25;
+    -webkit-animation: flicker 2s;
+}
+
+@-webkit-keyframes flicker
+{
+    0% {opacity:0;}
+    9% {opacity:0;}
+    10% {opacity:.5;}
+    13% {opacity:0;}
+    20% {opacity:.5;}
+    25% {opacity: .5;
+        color: #999900;
+        }
 }
 
 .btn_banner {
@@ -107,7 +122,7 @@ ul {
 
 #about {
     padding: 60px;
-    background: url(../img/aboutme.jpeg);
+    background: transparent no-repeat 0;
 }
 
 #about h1 {
@@ -151,7 +166,7 @@ ul {
 #services h1 {
     font-size: 35px;
     text-transform: uppercase;
-    padding: 10px;
+    padding-bottom: 30px;
     font-family: "Libre Baskerville", sans-serif;
 }
 
@@ -194,17 +209,19 @@ ul {
     font-weight: 600px;
     color: #4F4F4F;
     letter-spacing: 3px;
+    padding-bottom: 30px;
 }
 
 #skills img {
-    padding: 10px;
+    padding: 20px;
     width: 100px;
 }
 
 /* Contact */
 
 #contact {
-    background: url('../img/about.png');
+    background: transparent no-repeat 0;
+    background-size: cover;
     color: #ffffff;
     min-height: 1000px;
     text-align: center;

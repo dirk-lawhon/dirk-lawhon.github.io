@@ -17,119 +17,128 @@
         ga('send', 'pageview');
 
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax.js-1.4.2/parallax.js"></script>
 </head>
 <body>
-    <section id="banner">
+    <header>
+        <nav>
+            <ul>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="new-index.html#about">About</a></li>
+                <li><a href="new-index.html#services">Services</a></li>
+                <li><a href="new-index.html#skills">Skills</a></li>
+                <li><a href="new-index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="banner" data-parallax="scroll" data-image-src="img/bulb1.jpeg">
         <div class="container">
-            <nav>
-                <ul>
-                    <li class="current"><a href="index.html">Home</a></li>
-                    <li><a href="new-index.html#about">About</a></li>
-                    <li><a href="new-index.html#services">Services</a></li>
-                    <li><a href="new-index.html#skills">Skills</a></li>
-                    <li><a href="new-index.html#contact">Contact</a></li>
-                </ul>
-            </nav>
             <h1>Dirk Lawhon</h1>
             <h2>SOFTWARE ENGINEER</h2>
-            <button type="button" class="btn_banner"><a href="new-index.html#contact">Let's talk</a></button>
+            <button type="button" class="btn_banner"><a href="new-index.html#contact">Let's build</a></button>
         </div>
     </section>
 
-    <div id="content">
-
-        <section id="services">
-            <a name="services"></a>
-            <div class="container">
-                <h1>What I do</h1>
-                <div class="col">
-                    <img src="img/html.png">
-                    <h2>Development</h3>
-                    <p>Using HTML/CSS standard practices, and elegant structural solutions, I will turn your design into a fully functioning website.</p>
-                </div>
-                <div class="col">
-                    <img src="img/devices.png">
-                    <h2>Responsive Design</h2>
-                    <p>I design with mobile in mind. Each webpage is built with a flexible layout to accomodate every screen size.</p>
-                </div>
-                <div class="col">
-                    <img src="img/design.png">
-                    <h2>UI/UX</h2>
-                    <p>Use modern tools to turn your design into a web site</p>
-                </div>
+    <section id="services">
+        <a name="services"></a>
+        <div class="container">
+            <h1>What I do</h1>
+            <div class="col">
+                <img src="img/html.png">
+                <h2>Development</h3>
+                <p>Using HTML/CSS standard practices, and elegant structural solutions, I will turn your design into a fully functioning website.</p>
             </div>
-        </section>
-        
-        <section id="about">
-            <a name="about"></a>
-            <div class="container">
-                <img src="">
-                <h1>Hi, I'm Dirk.</h1>
-                <h2>I'm a front end web developer with a passion for building projects at the intersection of creative design and elegant code.</h2>
+            <div class="col">
+                <img src="img/devices.png">
+                <h2>Responsive Design</h2>
+                <p>I design with mobile in mind. Each webpage is built with a flexible layout to accomodate every screen size.</p>
             </div>
-        </section>
-
-        <section id="skills">
-            <a name="skills"></a>
-            <div class="container">
-                <h1>Toolbox</h1>
-                <div class="col">
-                    <img src="img/html5.png">
-                </div>
-                <div class="col">
-                    <img src="img/css3.png">
-                </div>
-                <div class="col">
-                    <img src="img/javascript.png">
-                </div>
-                <div class="col">
-                    <img src="img/jquery.png">
-                </div>
-                <div class="col">
-                    <img src="img/python.png">
-                </div>
+            <div class="col">
+                <img src="img/design.png">
+                <h2>UI/UX</h2>
+                <p>Use modern tools to turn your design into a web site</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="contact">
-            <a name="contact"></a>
-            <div class="container">
-                <h3>Contact</h3>
-                <form action="/action_page.php">
+    <section id="about" data-parallax="scroll" data-image-src="img/aboutme.jpeg">
+        <a name="about"></a>
+        <div class="container">
+            <img src="">
+            <h1>Hi, I'm Dirk.</h1>
+            <h2>I'm a front end web developer with a passion for building projects at the intersection of creative design and elegant code.</h2>
+        </div>
+    </section>
 
-                    <input type="text" id="name" name="name" placeholder="Name">
-
-                    <input type="text" id="email" name="email" placeholder="Email">
-
-                    <label for="reason">Reason</label>
-                    <select id="reason" name="reason">
-                        <option value="hello">Say Hello</option>
-                        <option value="proposal">Project Proposal</option>
-                        <option value="feedback">Questions/Feedback</option>
-                    </select>
-
-                    <label for="comments">Comments</label>
-                    <textarea id="comments" name="comments" style="height:150px"></textarea>
-
-                    <input type="submit" value="Send">
-
-                </form>
+    <section id="skills">
+        <a name="skills"></a>
+        <div class="container">
+            <h1>Toolbox</h1>
+            <div class="col">
+                <img src="img/html5.png">
             </div>
-        </section>
+            <div class="col">
+                <img src="img/css3.png">
+            </div>
+            <div class="col">
+                <img src="img/javascript.png">
+            </div>
+            <div class="col">
+                <img src="img/jquery.png">
+            </div>
+            <div class="col">
+                <img src="img/python.png">
+            </div>
+            <div class="col">
+                <img src="img/git.png">
+            </div>
+            <div class="col">
+                <img src="img/linux.png">
+            </div>
+        </div>
+    </section>
 
-        <footer>
-            <a href="mailto:dirklawhon@protonmail.com">
-                <img src="img/email.png">
-            </a>
-            <a href="http://www.linkedin.com/in/dirklawhon">
-                <img src="img/linked-in.png">
-            </a>
-            <a href="http://www.github.com/dirk-lawhon">
-                <img src="img/github.png">
-            </a>
-            <p>Dirk Lawhon &copy; 2017</p>
-        </footer>
-    </div>
+    <section id="contact" data-parallax="scroll" data-image-src="img/about.png">
+        <a name="contact"></a>
+        <div class="container">
+            <h3>Contact</h3>
+            <form action="/action_page.php">
+
+                <input type="text" id="name" name="name" placeholder="Name">
+
+                <input type="text" id="email" name="email" placeholder="Email">
+
+                <label for="reason">Reason</label>
+                <select id="reason" name="reason">
+                    <option value="hello">Say Hello</option>
+                    <option value="proposal">Project Proposal</option>
+                    <option value="feedback">Questions/Feedback</option>
+                </select>
+
+                <label for="comments">Comments</label>
+                <textarea id="comments" name="comments" style="height:150px"></textarea>
+
+                <input type="submit" value="Send">
+
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <a href="mailto:dirklawhon@protonmail.com">
+            <img src="img/email.png">
+        </a>
+        <a href="http://www.linkedin.com/in/dirklawhon">
+            <img src="img/linked-in.png">
+        </a>
+        <a href="http://www.github.com/dirk-lawhon">
+            <img src="img/github.png">
+        </a>
+        <p>Dirk Lawhon &copy; 2017</p>
+    </footer>
+
 </body>
 
 </html>
