@@ -152,7 +152,7 @@ header a:hover {
 }
 
 #services .col {
-    float: none;
+    float: left;
     width: 30%;
     padding: 20px;
     text-align: center;
@@ -292,8 +292,8 @@ footer {
 }
 
 footer img {
-    padding: 10px 20px 0px;
-    width: 40px;
+    padding: 20px;
+    width: 30px;
 }
 
 footer p {
