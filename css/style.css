@@ -109,7 +109,7 @@ header a:hover {
     border: solid #F9F3F4 2px;
     text-decoration: none;
     margin-top: 175px;
-    background: none;
+    background: transparent;
 }
 
 .btn_banner:hover {
@@ -152,16 +152,16 @@ header a:hover {
 }
 
 #services .col {
-    float: left;
+    float: none;
     width: 30%;
-    padding: 10px;
-    min-width: 200px;
+    padding: 20px;
     text-align: center;
     border-right: solid #5B5B5B 2px;
 }
 
 #services .col img {
-    width: 175px;
+    max-width: 200px;
+    width: 75%;
 }
 
 #services h1 {
@@ -342,8 +342,6 @@ footer p {
 /* Media Queries */
 
 @media(max-width: 768px){
-    nav,
-    nav li,
     #banner h1,
     #banner h2,
     #services .col{
@@ -352,10 +350,12 @@ footer p {
         width: 100%;
     }
 
+    #services .col img {
+        width: 125px;
+    }
+
     #banner h1 {
-        margin-top: 275px;
-        font-size: 45px;
-        margin-left: 0px;
+        font-size: 350%;
     }
 
     #banner h2 {
@@ -364,8 +364,7 @@ footer p {
     }
 
     .btn_banner {
-        display: flex;
-        justify-content: center;
+
     }
 
 }
