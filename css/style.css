@@ -129,6 +129,7 @@ header a:hover {
     float: left;
     font-weight: 600;
     font-size: 2.5em;
+    padding: 50px;
 }
 
 #about h2 {
@@ -136,6 +137,7 @@ header a:hover {
     font-weight: 300;
     font-size: 1.25em;
     color:darkgrey;
+    padding: 20px;
 }
 
 #about img {
