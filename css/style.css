@@ -345,7 +345,7 @@ footer p {
 
 /* Media Queries */
 
-@media(max-width: 768px){
+@media(max-width: 768px) {
     #banner h1,
     #banner h2,
     #services .col{
@@ -356,6 +356,10 @@ footer p {
 
     #services .col img {
         width: 125px;
+    }
+
+    #banner {
+        background-size: 80%;
     }
 
     #banner h1 {
@@ -369,7 +373,23 @@ footer p {
 
     .btn_banner {
         display: block;
-        margin: 200px auto;
+        margin: 20% auto;
+    }
+
+    #contact {
+        min-height: 50%;
+    }
+
+}
+
+@media(max-width: 320px) {
+    input[type=submit] {
+        display: block;
+        margin: 5% 28% auto;
+    }
+
+    #contact {
+        min-height: 30%;
     }
 
 }
