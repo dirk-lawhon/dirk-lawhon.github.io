@@ -291,7 +291,6 @@ input[type=submit]:hover {
 footer {
     padding: 5px;
     color: #ffffff;
-    text-align: center;
     background-color: black;
 }
 
@@ -384,8 +383,9 @@ footer p {
 
 @media(max-width: 320px) {
     input[type=submit] {
-        display: block;
-        margin: 5% 28% auto;
+        display: inline-block;
+        min-width: 100%;
+        text-align: center;
     }
 
     #contact {
