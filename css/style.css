@@ -363,8 +363,8 @@ footer p {
     }
 
     #banner h1 {
-        margin-top: 150px;
-        font-size: 3em;
+        margin-top: 200px;
+        font-size: 3.5em;
     }
 
     #banner h2 {
@@ -374,7 +374,7 @@ footer p {
 
     .btn_banner {
         display: block;
-        margin: 50% auto;
+        margin: 100% auto;
     }
 
     input[type=submit] {
@@ -396,6 +396,16 @@ footer p {
 
     #contact h3 {
         margin-top: 50px;
+    }
+
+    #banner h1 {
+        margin-top: 150px;
+        font-size: 3em;
+    }
+
+    #banner h2 {
+        padding: 0px;
+        font-size: 1.5em;
     }
 
 
