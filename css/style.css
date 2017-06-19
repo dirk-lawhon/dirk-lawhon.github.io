@@ -228,12 +228,12 @@ header a:hover {
     background: transparent no-repeat 0;
     background-size: cover;
     color: #ffffff;
-    min-height: 800px;
+    min-height: 600px;
     text-align: center;
 }
 
 #contact h3 {
-    margin-top: 150px;
+    margin-top: 100px;
     font-family: "Montserrat", sans-serif;
     font-size: 2em;
     text-transform: uppercase;
@@ -247,7 +247,7 @@ form {
     width: 40%;
     display: inline-block;
     font-family: "Montserrat", sans-serif;
-    min-width: 200px;
+    min-width: 225px;
 }
 
 label {
@@ -418,15 +418,16 @@ footer p {
 
     #contact h3 {
         margin-top: 50px;
+        font-size: 2em;
     }
 
     form {
-        width: 200px;
+        width: 275px;
     }
 
     #banner h1 {
         margin-top: 150px;
-        font-size: 2.25em;
+        font-size: 2.5em;
     }
 
     #banner h2 {
@@ -472,5 +473,11 @@ footer p {
 
     footer img {
         width: 30px;
+    }
+
+    @media(max-width: 360px) {
+        form {
+            width: 225px;
+        }
     }
 }
