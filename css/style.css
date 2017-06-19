@@ -137,7 +137,7 @@ header a:hover {
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     font-size: 1.25em;
-    color:darkgrey;
+    color: darkgrey;
     padding: 20px;
 }
 
@@ -247,7 +247,7 @@ form {
     width: 30%;
     display: inline-block;
     font-family: "Montserrat", sans-serif;
-    min-width: 200px;
+    min-width: 300px;
 }
 
 label {
@@ -359,20 +359,35 @@ footer p {
 
     #banner {
         background-size: 80%;
+
     }
 
     #banner h1 {
+        margin-top: 200px;
         font-size: 3.5em;
     }
 
     #banner h2 {
-        padding-top: 0px;
+        padding: 0px;
         font-size: 1.5em;
     }
 
     .btn_banner {
         display: block;
-        margin: 20% auto;
+        margin: 100% auto;
+    }
+
+    input[type=submit] {
+        display: inline-block;
+        width: 100%;
+    }
+
+    #about h1 {
+        margin-top: -20px;
+    }
+
+    #about h2 {
+        padding: 0px;
     }
 
 }
@@ -382,5 +397,6 @@ footer p {
     #contact h3 {
         margin-top: 50px;
     }
+
 
 }
