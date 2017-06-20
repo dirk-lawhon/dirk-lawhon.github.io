@@ -30,25 +30,27 @@ header a{
 }
 
 header li {
-    display: inline;
-    padding: 0 20px 0 20px;
+    display: inline-block;
+    margin: 10px auto;
+    padding: 0 30px 0 30px;
 }
 
 header nav {
-    margin: 20px 0 0 1300px;
-    float: right;
-    background-color: black;
+    background: black;
     z-index: 10;
     position: fixed;
+    width: 100%;
+    height: 4%;
 }
 
 header .highlight, header .current a {
-    color: darkslategrey;
+    color: #2F4F4F;
     font-weight: bold;
 }
 
 header a:hover {
     font-weight: bold;
+    color: #2F4F4F;
 }
 
 /* Hero */
@@ -114,36 +116,44 @@ header a:hover {
 
 .btn_banner:hover {
     border: solid #F9F3F4 3px;
-    background: darkslategrey;
+    background: #2F4F4F;
     cursor: pointer;
 }
 
 /* About */
 
 #about {
-    padding: 60px;
-    background: transparent no-repeat 0;
+    padding: 10px 0 0 0;
+    background: #E4E6C3 no-repeat 0;
+    min-height: 600px;
+}
+
+#about .col {
+    width: 50%;
+    float: left;
+    height: 50%;
 }
 
 #about h1 {
     font-family: "Libre Baskerville", sans-serif;
-    float: left;
     font-weight: 600;
-    font-size: 2.5em;
-    padding: 50px;
+    font-size: 250%;
+    padding: 10px 0 0px 0px;
+    width: 100%;
 }
 
 #about h2 {
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
-    font-size: 1.25em;
-    color: darkgrey;
-    padding: 20px;
+    font-size: 125%;
+    color: black;
 }
 
 #about img {
-    width: 50%;
-    height: 50%;
+    opacity: 0.3;
+    padding: 50px 0px 0px 0px;
+    width: 75%;
+    max-width: 300px;
 }
 
 /* Services */
@@ -155,21 +165,24 @@ header a:hover {
 }
 
 #services .col {
-    float: left;
+    display: inline-grid;
+    margin: 0px auto;
     width: 30%;
     text-align: center;
+    padding: 20px 10 0 10;
 }
 
 #services .col img {
     max-width: 100px;
     width: 40%;
+    display: block;
+    margin: auto;
 }
 
 #services h1 {
     font-size: 2.5em;
     font-weight: bold;
     text-transform: capitalize;
-    padding-bottom: 30px;
     font-family: "Libre Baskerville", sans-serif;
     color: #ffffff;
 }
@@ -187,22 +200,22 @@ header a:hover {
     color: #ffffff;
     font-size: 1em;
     line-height: 30px;
-    padding: 0 50px;
-    margin-bottom: 40px;
+    min-height: 100px;
 }
 
 /* Skills */
 
 #skills {
-    background-color: darkgrey;
-    padding: 50px;
+    background-color: #EDEAE0;
+    padding: 20px 0 20 0;
+    min-height: 320px;
 }
 
 #skills .col {
-    float: left;
+    display: inline-grid;
+    margin: 0 auto;
     width: 30%;
     padding: 10px;
-    display: block;
     text-align: center;
 }
 
@@ -217,7 +230,11 @@ header a:hover {
 }
 
 #skills img {
-    width: 75px;
+    width: 20%;
+    min-width: 50px;
+    padding: 15px;
+    display: block;
+    margin: auto;
 }
 
 /* Contact */
@@ -342,17 +359,32 @@ footer p {
 
 /* Media Queries */
 
-@media(max-width: 768px) {
-    #banner h1,
-    #banner h2,
-    #services .col{
+@media(max-width: 900px) {
+    #services .col {
         float: none;
-        text-align:center;
+        text-align: center;
         width: 100%;
     }
 
-    #services .col img {
-        width: 125px;
+    #skills .col {
+        text-align: center;
+        width: 25%;
+        margin: auto;
+        display: inline-grid;
+    }
+
+    #about .col {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media(max-width: 768px) {
+    #banner h1,
+    #banner h2 {
+        float: none;
+        text-align:center;
+        width: 100%;
     }
 
     #banner h1 {
@@ -371,6 +403,18 @@ footer p {
         background-color: darkslategrey;
     }
 
+    #about .col {
+        height: 40%;
+    }
+
+    #about h2 {
+        height: 50%;
+    }
+
+    #skills {
+        padding: 25px 0 25px 0;
+    }
+
     #contact h3 {
         margin-top: 100px;
         font-size: 2.25em;
@@ -383,14 +427,6 @@ footer p {
     input[type=submit] {
         display: inline-block;
         width: 100%;
-    }
-
-    #about h1 {
-        margin-top: -20px;
-    }
-
-    #about h2 {
-        padding: 0px;
     }
 
     footer img {
@@ -442,37 +478,16 @@ footer p {
         margin-top: 150px;
     }
 
-    #about {
-        padding: 20px;
-    }
-
-    #about h1 {
-        font-size: 2.25em;
-    }
-
-    #about h2 {
-        width: 100%;
-        padding-bottom: 20px;
-    }
-
-    #skills {
-        padding: 50px;
-        min-height: 400px;
-        background-color: #708090;
+    #services .col {
+        max-width: 225px;
+        border-top: solid #cccccc 1px;
     }
 
     #skills .col {
-        float: left;
-        width: 30%;
-        padding: 10px;
-        display: block;
         text-align: center;
-    }
-
-    #skills h1 {
-        font-size: 1.75em;
-        font-weight: 600px;
-        padding-bottom: 30px;
+        width: 20%;
+        margin: auto;
+        display: inline-grid;
     }
 
     #skills img {
