@@ -43,10 +43,6 @@ header nav {
     height: 4%;
 }
 
-header .highlight, header .current a {
-    font-weight: bold;
-}
-
 header a:hover {
     font-weight: bold;
     color: #2F4F4F;
