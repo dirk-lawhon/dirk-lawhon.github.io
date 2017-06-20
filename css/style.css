@@ -54,11 +54,11 @@ header a:hover {
 /* Hero */
 
 #banner {
-    min-height: 1000px;
     background: transparent no-repeat 0;
     background-size: cover;
     background-position: center;
     color: #F9F3F4;
+    height: 100%;
     width: 100%;
 }
 
@@ -417,6 +417,7 @@ footer p {
     #banner {
         background-position: left;
         background-attachment: fixed;
+        height: 700px;
     }
 
     #banner h1 {
@@ -482,7 +483,14 @@ footer p {
         width: 30px;
     }
 
-    @media(max-width: 360px) {
+    @media(max-width: 320px) {
+
+        #banner {
+            height: 600px;
+            background-attachment: fixed;
+            background-position: -120%;
+        }
+
         form {
             width: 225px;
         }
