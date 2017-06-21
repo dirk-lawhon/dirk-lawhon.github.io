@@ -120,13 +120,11 @@ header a:hover {
 #about {
     padding: 10px 0 0 0;
     background: #E4E6C3 no-repeat 0;
-    min-height: 600px;
 }
 
 #about .col {
     width: 50%;
     float: left;
-    height: 50%;
 }
 
 #about h1 {
@@ -142,11 +140,12 @@ header a:hover {
     font-weight: 300;
     font-size: 125%;
     color: black;
+    padding-bottom: 20px;
 }
 
 #about img {
     opacity: 0.7;
-    padding: 50px 0px 0px 0px;
+    padding: 50px 0px 50px 0px;
     width: 75%;
     max-width: 300px;
 }
@@ -217,9 +216,9 @@ header a:hover {
 #skills h1 {
     font-family: "Libre Baskerville", sans-serif;
     font-size: 2em;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: 600px;
-    color: #ffffff;
+    color: darkgrey;
     letter-spacing: 3px;
     padding-bottom: 30px;
 }
@@ -398,13 +397,9 @@ footer p {
         background-color: darkslategrey;
     }
 
-    #about .col {
-        height: 40%;
-    }
 
-    #about h2 {
-        height: 50%;
-    }
+
+
 
     #skills {
         padding: 25px 0 25px 0;
@@ -443,12 +438,6 @@ footer p {
 
     form {
         width: 275px;
-    }
-
-    #banner {
-        background-position: left;
-        background-attachment: fixed;
-        height: 700px;
     }
 
     #banner h1 {
